@@ -7,7 +7,7 @@
             #hidden {border-style: hidden;}
             #dotted {border-style: dotted;}
             #dashed {border-style: dashed;}
-            #solid {border-style: solid;}
+            .solid {border-style: solid;}
             #double {border-style: double;}
             #groove {border-style: groove;}
             #ridge {border-style: ridge;}
@@ -18,10 +18,16 @@
             #four_style {border-style: dotted dashed solid double;}
 
             /*border width*/
-            .width {border-style: solid;}
             #thin {border-width: thin;}
             #medium {border-width: medium;}
             #thick {border-width: thick;}
+            #pixel {border-width: 5px;}
+            #point {border-width: 5pt;}
+            #two_width {border-width: 10px 20px;}
+            #three_width {border-width: thin medium thick;}
+            #four_width {border-width: 5pt 10pt 15pt 20pt;}
+
+            /*border color*/
         </style>
     </head>
     <body>
@@ -30,7 +36,7 @@
         <p id="hidden">hidden</p>
         <p id="dotted">dotted</p>
         <p id="dashed">dashed</p>
-        <p id="solid">solid</p>
+        <p class="solid">solid</p>
         <p id="double">double</p>
         <p id="groove">groove</p>
         <p id="ridge">ridge</p>
@@ -41,8 +47,15 @@
         <p id="four_style">dotted dashed solid double</p>
 
         <!--border width-->
-        <p class="width" id="thin">thin</p>
-        <p class="width" id="medium">medium</p>
-        <p class="width" id="thick">thick</p>
+        <p class="solid" id="thin">thin</p>
+        <p class="solid" id="medium">medium</p>
+        <p class="solid" id="thick">thick</p>
+        <p class="solid" id="pixel">5 px</p>
+        <p class="solid" id="point">5 pt</p>
+        <p class="solid" id="two_width">10px 20px</p>
+        <p class="solid" id="three_width">thin medium thick</p>
+        <p class="solid" id="four_width">5pt 10pt 15pt 20pt</p>
+
+        <!--border color-->
     </body>
 </html>
